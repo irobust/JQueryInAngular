@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.toolbar.css">
+
+	<style type="text/css">
+		#format-toolbar{
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		#toolbar-options { display: none; }
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.toolbar.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#format-toolbar').toolbar({
+		    content: '#toolbar-options', 
+		    position: 'bottom'
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="btn-toolbar" id="format-toolbar">
+        <i class="fa fa-cog"></i>
+	</div>
+	 
+	<!-- Our tooltip style toolbar -->
+	 <div id="toolbar-options">
+	       <a href="#"><i class="fa fa-plane"></i></a>
+	       <a href="#"><i class="fa fa-car"></i></a>
+	       <a href="#"><i class="fa fa-bicycle"></i></a>
+	 </div>
+</body>
+</html>
